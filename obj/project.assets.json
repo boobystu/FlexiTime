@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GIT\\FlexiTime\\FlexiTime.csproj",
+      "projectUniqueName": "C:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\FlexiTime.csproj",
       "projectName": "FlexiTime",
-      "projectPath": "E:\\GIT\\FlexiTime\\FlexiTime.csproj",
+      "projectPath": "C:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\FlexiTime.csproj",
       "packagesPath": "C:\\Users\\Stuart.Young\\.nuget\\packages\\",
-      "outputPath": "E:\\GIT\\FlexiTime\\obj\\",
+      "outputPath": "C:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

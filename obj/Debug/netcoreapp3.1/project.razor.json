@@ -20499,6 +20499,27 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "FlexiTime",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\Views\\Home\\index.cshtml",
+      "TargetPath": "Views\\Home\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
