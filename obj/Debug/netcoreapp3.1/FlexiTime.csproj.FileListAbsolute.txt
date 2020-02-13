@@ -48,3 +48,6 @@ C:\Users\Stuart.Young\OneDrive\Documents\FlexiTime\obj\Debug\netcoreapp3.1\Flexi
 c:\Users\Stuart.Young\OneDrive\Documents\FlexiTime\obj\Debug\netcoreapp3.1\Razor\Views\Home\index.cshtml.g.cs
 c:\Users\Stuart.Young\OneDrive\Documents\FlexiTime\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 c:\Users\Stuart.Young\OneDrive\Documents\FlexiTime\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+c:\Users\Stuart.Young\OneDrive\Documents\FlexiTime\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Index.cshtml.g.cs
+c:\Users\Stuart.Young\OneDrive\Documents\FlexiTime\obj\Debug\netcoreapp3.1\Razor\Views\Teams\Index.cshtml.g.cs
+c:\Users\Stuart.Young\OneDrive\Documents\FlexiTime\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs

@@ -35,7 +35,8 @@ namespace FlexiTime
                 app.UseDeveloperExceptionPage();
             }
 
-        
+            app.UseStaticFiles();
+
             app.UseRouting();
 
             // app.UseEndpoints(endpoints =>
@@ -50,7 +51,7 @@ namespace FlexiTime
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id:int?}");
+                    pattern: "{controller=Home}/{action=Index}");
                 endpoints.MapRazorPages();
             });
 

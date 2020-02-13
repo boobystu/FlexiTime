@@ -20506,6 +20506,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\Views\\Teams\\Index.cshtml",
+      "TargetPath": "Views\\Teams\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\Views\\Home\\index.cshtml",
       "TargetPath": "Views\\Home\\index.cshtml",
       "FileKind": "mvc"
@@ -20516,8 +20521,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Stuart.Young\\OneDrive\\Documents\\FlexiTime\\Views\\Employees\\Index.cshtml",
+      "TargetPath": "Views\\Employees\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
