@@ -1,13 +1,21 @@
+using FlexiTime.Data;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.Encodings.Web;
+using FlexiTime.Models;
 
 namespace FlexiTime.Controllers
 {
     public class EmployeesController : Controller
     {
+        IEmployeeData _employeeData = new EmployeeData();
         public IActionResult Index()
         {
-            return View();
+            var employeeViewModel = new EmployeeViewModel
+            {
+                ListOfEmployees = _employeeData.GetEmployeesByName()
+            };
+
+            return View(employeeViewModel);
+
         }
     }
 }

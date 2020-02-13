@@ -1,1 +1,18 @@
-<h1>Employees index</h1>
+@model EmployeeViewModel
+
+<h2>Employees</h2>
+<div class="row">
+
+    @foreach(var employee in Model.ListOfEmployees)
+    {
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>@employee.Forename</h3>
+            </div>
+            <div class="panel-body">
+                <span>Email: @employee.Email</span>
+            </div>
+        </div>
+    }
+
+</div>
