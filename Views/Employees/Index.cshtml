@@ -1,9 +1,25 @@
-@model EmployeeViewModel
+@page
+@model FlexiTime.Views.Employees.IndexModel
 
 <h2>Employees</h2>
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" 
+                   asp-for="SearchTerm" />
+            <span class="input-group-btn">
+                <button class="btn btn-default">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+
 <div class="row">
 
-    @foreach(var employee in Model.ListOfEmployees)
+    @foreach(var employee in Model.Employees)
     {
         <div class="panel panel-default">
             <div class="panel-heading">

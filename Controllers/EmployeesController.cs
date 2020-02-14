@@ -7,14 +7,10 @@ namespace FlexiTime.Controllers
     public class EmployeesController : Controller
     {
         IEmployeeData _employeeData = new EmployeeData();
-        public IActionResult Index()
+        public IActionResult Index(string name)
         {
-            var employeeViewModel = new EmployeeViewModel
-            {
-                ListOfEmployees = _employeeData.GetEmployeesByName()
-            };
 
-            return View(employeeViewModel);
+            return View();
 
         }
     }
