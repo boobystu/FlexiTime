@@ -23,5 +23,10 @@ namespace FlexiTime.Models
         public string Surname{get;set;}
         public Location HomeOffice{get;set;}
         public string Email{get;set;}
+
+        public string FormattedName()
+        {
+            return Forename + " " + Surname;
+        }
     }
 }

@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace FlexiTime.Controllers
 {
 
-     
     public class EmployeesController : Controller
     {
         IEmployeeData _employeeData = new EmployeeData();
+        
         [HttpGet]
         public async Task<IActionResult> Index(string id)
         {
@@ -26,7 +26,7 @@ namespace FlexiTime.Controllers
             foreach (var employee in _employeeData.GetEmployeesByName(SearchTerm))
             {
                 EmployeeViewModel employeeViewModel = new EmployeeViewModel();
-                employeeViewModel.Name = employee.Forename + " " + employee.Surname;
+                employeeViewModel.Name = employee.FormattedName();
                 employeeViewModel.HomeOffice = employee.HomeOffice.Name;
                 employeeViewModel.Email = employee.Email;
                 employees.Add(employeeViewModel);
