@@ -1,17 +1,38 @@
 using FlexiTime.Data;
 using Microsoft.AspNetCore.Mvc;
-using FlexiTime.Models;
+using FlexiTime.ViewModels;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace FlexiTime.Controllers
 {
+
+     
     public class EmployeesController : Controller
     {
         IEmployeeData _employeeData = new EmployeeData();
-        public IActionResult Index(string name)
+        [HttpGet]
+        public async Task<IActionResult> Index(string id)
         {
 
-            return View();
+            return View(await Task.Run(() => GetEmployeeViewModelList(id)));
+                
+        }
 
+        private List<EmployeeViewModel> GetEmployeeViewModelList(string SearchTerm)
+        {
+            var employees = new List<EmployeeViewModel>();
+
+            foreach (var employee in _employeeData.GetEmployeesByName(SearchTerm))
+            {
+                EmployeeViewModel employeeViewModel = new EmployeeViewModel();
+                employeeViewModel.Name = employee.Forename + " " + employee.Surname;
+                employeeViewModel.HomeOffice = employee.HomeOffice.Name;
+                employeeViewModel.Email = employee.Email;
+                employees.Add(employeeViewModel);
+            }
+
+            return employees;
         }
     }
 }
