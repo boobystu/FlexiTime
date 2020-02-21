@@ -19,6 +19,7 @@
             <div class="panel-body">
                 <span>Home Office: @employee.HomeOffice</span>
                 <span>Email: @employee.Email</span>
+                <a asp-controller="Employees" asp-action="Edit" asp-route-id="@employee.Id">Edit</a>
             </div>
         </div>
     </div>

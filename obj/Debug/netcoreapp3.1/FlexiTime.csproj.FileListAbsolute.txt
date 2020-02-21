@@ -122,3 +122,4 @@ c:/Users/Stuart.Young/OneDrive/Documents/FlexiTime/obj/Debug/netcoreapp3.1/Flexi
 c:/Users/Stuart.Young/OneDrive/Documents/FlexiTime/obj/Debug/netcoreapp3.1/FlexiTime.Views.pdb
 C:/Users/Stuart.Young/OneDrive/Documents/FlexiTime/obj/Debug/netcoreapp3.1/FlexiTime.csproj.CopyComplete
 /home/stuart/Documents/GIT/Flexitime/obj/Debug/netcoreapp3.1/Razor/Views/Locations/Index.cshtml.g.cs
+/home/stuart/Documents/GIT/Flexitime/obj/Debug/netcoreapp3.1/Razor/Views/Employees/Edit.cshtml.g.cs

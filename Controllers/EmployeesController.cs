@@ -19,6 +19,11 @@ namespace FlexiTime.Controllers
                 
         }
 
+        public async Task<IActionResult> Edit(int id)
+        {
+            return View(await Task.Run(() => GetEmployeeViewModelFromID(id)));
+        }
+
         private List<EmployeeViewModel> GetEmployeeViewModelList(string SearchTerm)
         {
             var employees = new List<EmployeeViewModel>();
@@ -26,6 +31,7 @@ namespace FlexiTime.Controllers
             foreach (var employee in _employeeData.GetEmployeesByName(SearchTerm))
             {
                 EmployeeViewModel employeeViewModel = new EmployeeViewModel();
+                employeeViewModel.Id = employee.EmployeeID;
                 employeeViewModel.Name = employee.FormattedName();
                 employeeViewModel.HomeOffice = employee.HomeOffice.Name;
                 employeeViewModel.Email = employee.Email;
@@ -33,6 +39,20 @@ namespace FlexiTime.Controllers
             }
 
             return employees;
+        }
+
+        private EmployeeViewModel GetEmployeeViewModelFromID(int id)
+        {
+            var employeeViewModel = new EmployeeViewModel();
+
+            var employee = _employeeData.GetEmployeeById(id);
+
+            employeeViewModel.Id = employee.EmployeeID;
+            employeeViewModel.Forename = employee.Forename;
+            employeeViewModel.Surname = employee.Surname;
+            employeeViewModel.Email = employee.Email;
+
+            return employeeViewModel;
         }
     }
 }
