@@ -1,1 +1,29 @@
-<h1>Teams Index</h1>
+@model IEnumerable<FlexiTime.ViewModels.TeamViewModel>
+
+<h2>Teams</h2>
+ 
+<form asp-controller="Teams" asp-action="Index" method="get">
+    <p>
+        <input type="text" name="id">
+        <input type="submit" value="Filter by name" />
+    </p>
+</form>
+
+@foreach(var team in Model)
+{
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>@team.Name</h3>
+            </div>
+            <div class="panel-body">
+                @foreach(var name in @team.Members)
+                {
+                    <div class="row">
+                        <h4>@name</h4>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}

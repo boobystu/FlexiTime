@@ -21,5 +21,15 @@ namespace FlexiTime.Models
         public string Name{get;set;}
 
         public List<Employee> Members{get;set;}
+
+        public List<string> GetMemberNames()
+        {
+            var names = new List<string>();
+            foreach(var member in Members)
+            {
+                names.Add(member.FormattedName());
+            }
+            return names;
+        }
     }
 }
