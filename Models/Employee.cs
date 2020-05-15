@@ -2,6 +2,10 @@ namespace FlexiTime.Models
 {
     public class Employee
     {
+        public Employee()
+        {
+            
+        }
         public Employee(int id, string forename, string surname, Location office, string email)
         {
             this.id = id;

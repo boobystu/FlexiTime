@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using FlexiTime.ViewModels;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using FlexiTime.Models;
 
 namespace FlexiTime.Controllers
 {
@@ -21,7 +22,15 @@ namespace FlexiTime.Controllers
 
         public async Task<IActionResult> Edit(int id)
         {
-            return View(await Task.Run(() => GetEmployeeViewModelFromID(id)));
+            return View(await Task.Run(() =>  _employeeData.GetEmployeeById(id)));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(Employee employee)
+        {
+            _employeeData.UpdateEmployee(employee);
+            
+            return await Task.Run(() => RedirectToAction("Index"));
         }
 
         private List<EmployeeViewModel> GetEmployeeViewModelList(string SearchTerm)
@@ -54,5 +63,6 @@ namespace FlexiTime.Controllers
 
             return employeeViewModel;
         }
+
     }
 }
